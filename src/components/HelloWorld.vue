@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, defineProps } from 'vue';
 
 defineProps({
-  msg: { type: String, required: true },
+  msg: {
+    type: String,
+    required: true,
+  },
 });
 
 const count = ref(0);
@@ -16,4 +19,4 @@ const count = ref(0);
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
